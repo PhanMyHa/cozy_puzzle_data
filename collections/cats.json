@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "collection": "cats",
+  "cats": [
+    {
+      "id": "cat_milo",
+      "name": "Milo",
+      "rarity": "COMMON",
+      "theme_id": "SLEEPY",
+      "description": "Milo loves to sleep in sunny spots and dreams of a big adventure!",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/01_Milo.webp",
+      "image_asset": "img_cat_milo",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/01_Milo.webp",
+      "unlock_condition": {
+        "type": "DEFAULT_UNLOCKED"
+      },
+      "unlock_hint": "Available from start"
+    },
+    {
+      "id": "cat_luna",
+      "name": "Luna",
+      "rarity": "COMMON",
+      "theme_id": "SLEEPY",
+      "description": "Luna loves curling up on cozy blankets while listening to rain.",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/02_Luna.webp",
+      "image_asset": "img_cat_luna",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/02_Luna.webp",
+      "unlock_condition": {
+        "type": "COMPLETE_LEVEL",
+        "mode": "CAT_PUZZLE",
+        "level_number": 1,
+        "level_id": "cat_1"
+      },
+      "unlock_hint": "Complete Cat Puzzle Level 1"
+    },
+    {
+      "id": "cat_snow",
+      "name": "Snow",
+      "rarity": "RARE",
+      "theme_id": "SLEEPY",
+      "description": "Snow is a quiet kitten who loves fluffy cushions and gentle pets.",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/03_Snow.webp",
+      "image_asset": "img_cat_snow",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/03_Snow.webp",
+      "unlock_condition": {
+        "type": "COMPLETE_TOTAL_LEVELS",
+        "count": 3
+      },
+      "unlock_hint": "Complete 3 levels"
+    },
+    {
+      "id": "cat_oliver",
+      "name": "Oliver",
+      "rarity": "EPIC",
+      "theme_id": "CHEF",
+      "description": "Oliver is a master pastry chef making miniature fish pies!",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/04_Biscuit.webp",
+      "image_asset": "img_cat_oliver",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/04_Biscuit.webp",
+      "unlock_condition": {
+        "type": "COMPLETE_LEVEL",
+        "mode": "COLOR_THE_CAT",
+        "level_number": 1,
+        "level_id": "color_1"
+      },
+      "unlock_hint": "Complete Color the Cat Level 1"
+    },
+    {
+      "id": "cat_coco",
+      "name": "Coco",
+      "rarity": "RARE",
+      "theme_id": "CHEF",
+      "description": "Coco loves taste-testing warm sweet milk and honey buns.",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/06_Coco.webp",
+      "image_asset": "img_cat_coco",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/06_Coco.webp",
+      "unlock_condition": {
+        "type": "EARN_TOTAL_STARS",
+        "count": 6
+      },
+      "unlock_hint": "Collect 6 stars"
+    },
+    {
+      "id": "cat_waffles",
+      "name": "Waffles",
+      "rarity": "COMMON",
+      "theme_id": "CHEF",
+      "description": "Waffles wears a tiny apron and flips fish-shaped pancakes.",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/04_Biscuit.webp",
+      "image_asset": "img_cat_waffles",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/04_Biscuit.webp",
+      "unlock_condition": {
+        "type": "COMPLETE_LEVEL",
+        "mode": "SLIDE_THE_CAT",
+        "level_number": 1,
+        "level_id": "slide_easy_1"
+      },
+      "unlock_hint": "Complete Slide the Cat Level 1"
+    },
+    {
+      "id": "cat_leo",
+      "name": "Leo",
+      "rarity": "EPIC",
+      "theme_id": "SPACE",
+      "description": "Leo explores the galaxy in his cozy little bubble astronaut helmet!",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/09_Tiger.webp",
+      "image_asset": "img_cat_leo",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/09_Tiger.webp",
+      "unlock_condition": {
+        "type": "COMPLETE_LEVEL",
+        "mode": "FIND_THE_PAIR",
+        "level_number": 1,
+        "level_id": "pair_easy_1"
+      },
+      "unlock_hint": "Complete Find the Pair Level 1"
+    },
+    {
+      "id": "cat_nova",
+      "name": "Nova",
+      "rarity": "RARE",
+      "theme_id": "SPACE",
+      "description": "Nova catches shooting star dust in jars and dreams of the moon.",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/10_Mallow.webp",
+      "image_asset": "img_cat_nova",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/10_Mallow.webp",
+      "unlock_condition": {
+        "type": "COMPLETE_TOTAL_LEVELS",
+        "count": 6
+      },
+      "unlock_hint": "Complete 6 levels"
+    },
+    {
+      "id": "cat_comet",
+      "name": "Comet",
+      "rarity": "LEGENDARY",
+      "theme_id": "SPACE",
+      "description": "Comet zooms across the night sky leaving trails of sparkles.",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/11_Boba.webp",
+      "image_asset": "img_cat_comet",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/11_Boba.webp",
+      "unlock_condition": {
+        "type": "EARN_TOTAL_STARS",
+        "count": 18
+      },
+      "unlock_hint": "Collect 18 stars"
+    },
+    {
+      "id": "cat_bella",
+      "name": "Bella",
+      "rarity": "RARE",
+      "theme_id": "GARDEN",
+      "description": "Bella loves napping among chamomile blossoms and butterflies.",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/07_Milk.webp",
+      "image_asset": "img_cat_bella",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/07_Milk.webp",
+      "unlock_condition": {
+        "type": "COMPLETE_LEVEL",
+        "mode": "CAT_PUZZLE",
+        "level_number": 2,
+        "level_id": "cat_2"
+      },
+      "unlock_hint": "Complete Cat Puzzle Level 2"
+    },
+    {
+      "id": "cat_clover",
+      "name": "Clover",
+      "rarity": "COMMON",
+      "theme_id": "GARDEN",
+      "description": "Clover is a lucky calico cat who always finds four-leaf clovers.",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/08_Mochi.webp",
+      "image_asset": "img_cat_clover",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/08_Mochi.webp",
+      "unlock_condition": {
+        "type": "DEFAULT_UNLOCKED"
+      },
+      "unlock_hint": "Available from start"
+    },
+    {
+      "id": "cat_pudding",
+      "name": "Pudding",
+      "rarity": "LEGENDARY",
+      "theme_id": "GARDEN",
+      "description": "Pudding is a curious cat who loves exploring new magical places!",
+      "image_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/12_Pudding.webp",
+      "image_asset": "img_cat_pudding",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/cats/12_Pudding.webp",
+      "unlock_condition": {
+        "type": "COMPLETE_TOTAL_LEVELS",
+        "count": 10
+      },
+      "unlock_hint": "Complete 10 levels"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "data_version": 1,
+  "app_min_version": "1.0",
+  "updated_at": "2026-10-18T00:00:00Z",
+  "files": {
+    "game_config": "config/game_config.json",
+    "cat_puzzle": "levels/cat_puzzle.json",
+    "color_the_cat": "levels/color_the_cat.json",
+    "slide_the_cat": "levels/slide_the_cat.json",
+    "find_the_pair": "levels/find_the_pair.json",
+    "cat_connect": "levels/cat_connect.json",
+    "cats": "collections/cats.json",
+    "furniture": "furniture/furniture.json",
+    "rooms": "rooms/rooms.json"
+  }
+}
