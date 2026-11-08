@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "default_grid_size": 3,
+  "daily_reward_stars": 15,
+  "max_hints_per_level": 3,
+  "cat_puzzle_default_rows": 3,
+  "cat_puzzle_default_columns": 3,
+  "find_pair_default_time_limit": 120,
+  "slide_cat_default_shuffle_moves": 15,
+  "color_cat_default_palette": [
+    "#FFB6D2",
+    "#83D4F7",
+    "#FFE68C",
+    "#A8E6CF",
+    "#DCD0FF",
+    "#FFD3B6",
+    "#FFAAA5",
+    "#FFFFFF"
+  ]
+}

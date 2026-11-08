@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "difficulty_levels": [
+    "EASY",
+    "MEDIUM",
+    "HARD"
+  ],
+  "levels": [
+    {
+      "id": "connect_easy_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "EASY",
+      "rows": 5,
+      "cols": 5,
+      "start": { "row": 0, "col": 0 },
+      "goal": { "row": 4, "col": 4 },
+      "obstacles": [
+        { "row": 1, "col": 1 },
+        { "row": 2, "col": 2 },
+        { "row": 3, "col": 3 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_cute_cat"
+    },
+    {
+      "id": "connect_easy_2",
+      "number": 2,
+      "title": "Level 2",
+      "difficulty": "EASY",
+      "rows": 5,
+      "cols": 5,
+      "start": { "row": 0, "col": 2 },
+      "goal": { "row": 4, "col": 2 },
+      "obstacles": [
+        { "row": 2, "col": 1 },
+        { "row": 2, "col": 2 },
+        { "row": 2, "col": 3 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_cozy_room"
+    },
+    {
+      "id": "connect_easy_3",
+      "number": 3,
+      "title": "Level 3",
+      "difficulty": "EASY",
+      "rows": 5,
+      "cols": 5,
+      "start": { "row": 4, "col": 0 },
+      "goal": { "row": 0, "col": 4 },
+      "obstacles": [
+        { "row": 2, "col": 0 },
+        { "row": 2, "col": 1 },
+        { "row": 2, "col": 3 },
+        { "row": 2, "col": 4 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_little_garden"
+    },
+    {
+      "id": "connect_easy_4",
+      "number": 4,
+      "title": "Level 4",
+      "difficulty": "EASY",
+      "rows": 5,
+      "cols": 5,
+      "start": { "row": 0, "col": 0 },
+      "goal": { "row": 4, "col": 0 },
+      "obstacles": [
+        { "row": 1, "col": 0 },
+        { "row": 2, "col": 0 },
+        { "row": 3, "col": 0 },
+        { "row": 2, "col": 2 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_animals"
+    },
+    {
+      "id": "connect_easy_5",
+      "number": 5,
+      "title": "Level 5",
+      "difficulty": "EASY",
+      "rows": 5,
+      "cols": 5,
+      "start": { "row": 2, "col": 2 },
+      "goal": { "row": 4, "col": 4 },
+      "obstacles": [
+        { "row": 1, "col": 2 },
+        { "row": 2, "col": 1 },
+        { "row": 3, "col": 1 },
+        { "row": 1, "col": 3 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_picnic"
+    },
+    {
+      "id": "connect_med_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "MEDIUM",
+      "rows": 7,
+      "cols": 7,
+      "start": { "row": 0, "col": 0 },
+      "goal": { "row": 6, "col": 6 },
+      "obstacles": [
+        { "row": 1, "col": 2 },
+        { "row": 2, "col": 2 },
+        { "row": 3, "col": 2 },
+        { "row": 3, "col": 4 },
+        { "row": 4, "col": 4 },
+        { "row": 5, "col": 4 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_nature"
+    },
+    {
+      "id": "connect_med_2",
+      "number": 2,
+      "title": "Level 2",
+      "difficulty": "MEDIUM",
+      "rows": 7,
+      "cols": 7,
+      "start": { "row": 0, "col": 3 },
+      "goal": { "row": 6, "col": 3 },
+      "obstacles": [
+        { "row": 2, "col": 2 },
+        { "row": 2, "col": 3 },
+        { "row": 2, "col": 4 },
+        { "row": 4, "col": 2 },
+        { "row": 4, "col": 3 },
+        { "row": 4, "col": 4 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_space"
+    },
+    {
+      "id": "connect_med_3",
+      "number": 3,
+      "title": "Level 3",
+      "difficulty": "MEDIUM",
+      "rows": 7,
+      "cols": 7,
+      "start": { "row": 6, "col": 0 },
+      "goal": { "row": 0, "col": 6 },
+      "obstacles": [
+        { "row": 1, "col": 1 },
+        { "row": 2, "col": 2 },
+        { "row": 3, "col": 3 },
+        { "row": 4, "col": 4 },
+        { "row": 5, "col": 5 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_food"
+    },
+    {
+      "id": "connect_hard_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "HARD",
+      "rows": 9,
+      "cols": 9,
+      "start": { "row": 0, "col": 0 },
+      "goal": { "row": 8, "col": 8 },
+      "obstacles": [
+        { "row": 1, "col": 3 },
+        { "row": 2, "col": 3 },
+        { "row": 3, "col": 3 },
+        { "row": 4, "col": 3 },
+        { "row": 5, "col": 3 },
+        { "row": 3, "col": 5 },
+        { "row": 4, "col": 5 },
+        { "row": 5, "col": 5 },
+        { "row": 6, "col": 5 },
+        { "row": 7, "col": 5 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_frog_pond"
+    },
+    {
+      "id": "connect_hard_2",
+      "number": 2,
+      "title": "Level 2",
+      "difficulty": "HARD",
+      "rows": 9,
+      "cols": 9,
+      "start": { "row": 0, "col": 4 },
+      "goal": { "row": 8, "col": 4 },
+      "obstacles": [
+        { "row": 2, "col": 2 },
+        { "row": 2, "col": 3 },
+        { "row": 2, "col": 4 },
+        { "row": 2, "col": 5 },
+        { "row": 2, "col": 6 },
+        { "row": 6, "col": 2 },
+        { "row": 6, "col": 3 },
+        { "row": 6, "col": 4 },
+        { "row": 6, "col": 5 },
+        { "row": 6, "col": 6 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_cozy_room"
+    },
+    {
+      "id": "connect_hard_3",
+      "number": 3,
+      "title": "Level 3",
+      "difficulty": "HARD",
+      "rows": 9,
+      "cols": 9,
+      "start": { "row": 8, "col": 0 },
+      "goal": { "row": 0, "col": 8 },
+      "obstacles": [
+        { "row": 1, "col": 2 },
+        { "row": 2, "col": 4 },
+        { "row": 3, "col": 6 },
+        { "row": 5, "col": 2 },
+        { "row": 6, "col": 4 },
+        { "row": 7, "col": 6 },
+        { "row": 4, "col": 1 },
+        { "row": 4, "col": 7 }
+      ],
+      "reward_stars": 3,
+      "image_asset": "img_puzzle_cat_artist"
+    }
+  ]
+}

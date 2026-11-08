@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "game_mode": "color_the_cat",
+  "levels": [
+    {
+      "id": "color_cat_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "BASIC",
+      "view_box_width": 300.0,
+      "view_box_height": 300.0,
+      "palette": [
+        "#FFB6D2",
+        "#83D4F7",
+        "#FFE68C",
+        "#A8E6CF",
+        "#DCD0FF",
+        "#FFD3B6",
+        "#FFAAA5",
+        "#FFFFFF"
+      ],
+      "svg_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/color_the_cat/Nature_11.svg",
+      "thumbnail_url": "https://raw.githubusercontent.com/PhanMyHa/cozy_puzzle_data/main/color_the_cat/Nature_11.svg",
+      "thumbnail_asset": "img_puzzle_cute_cat",
+      "regions": [
+        {
+          "id": "ear_left",
+          "name": "Left Ear",
+          "path_data": "M 85 105 L 55 45 Q 90 50 115 85 Z"
+        },
+        {
+          "id": "ear_right",
+          "name": "Right Ear",
+          "path_data": "M 185 85 Q 210 50 245 45 L 215 105 Z"
+        },
+        {
+          "id": "ear_inner_left",
+          "name": "Inner Left Ear",
+          "path_data": "M 82 85 L 68 55 Q 88 58 102 75 Z"
+        },
+        {
+          "id": "ear_inner_right",
+          "name": "Inner Right Ear",
+          "path_data": "M 198 75 Q 212 58 232 55 L 218 85 Z"
+        },
+        {
+          "id": "face",
+          "name": "Face",
+          "path_data": "M 90 100 C 60 120 60 170 100 185 C 130 195 170 195 200 185 C 240 170 240 120 210 100 C 190 85 110 85 90 100 Z"
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "path_data": "M 100 180 C 70 200 70 260 105 270 L 195 270 C 230 260 230 200 200 180 Z"
+        },
+        {
+          "id": "belly",
+          "name": "Belly",
+          "path_data": "M 125 195 C 110 215 110 250 130 265 L 170 265 C 190 250 190 215 175 195 Z"
+        },
+        {
+          "id": "tail",
+          "name": "Tail",
+          "path_data": "M 215 250 C 255 245 275 210 265 180 C 255 155 240 165 245 185 C 250 205 235 230 210 235 Z"
+        },
+        {
+          "id": "bowtie",
+          "name": "Bowtie",
+          "path_data": "M 150 185 L 120 172 L 120 198 Z M 150 185 L 180 172 L 180 198 Z"
+        },
+        {
+          "id": "bowtie_knot",
+          "name": "Bowtie Knot",
+          "path_data": "M 143 180 C 143 175 157 175 157 180 C 157 190 143 190 143 180 Z"
+        }
+      ],
+      "decorative_paths": [
+        {
+          "path_data": "M 70 145 L 30 140 M 70 155 L 25 158",
+          "stroke_color": "#30445C",
+          "stroke_width": 2.5
+        },
+        {
+          "path_data": "M 230 145 L 270 140 M 230 155 L 275 158",
+          "stroke_color": "#30445C",
+          "stroke_width": 2.5
+        },
+        {
+          "path_data": "M 105 135 Q 115 145 125 135 M 175 135 Q 185 145 195 135",
+          "stroke_color": "#30445C",
+          "stroke_width": 2.5
+        },
+        {
+          "path_data": "M 146 148 L 154 148 L 150 153 Z M 150 153 Q 145 160 140 158 M 150 153 Q 155 160 160 158",
+          "stroke_color": "#30445C",
+          "stroke_width": 2.5
+        }
+      ]
+    },
+    {
+      "id": "color_cat_2",
+      "number": 2,
+      "title": "Level 2",
+      "difficulty": "BASIC",
+      "view_box_width": 300.0,
+      "view_box_height": 300.0,
+      "palette": [
+        "#FFB6D2",
+        "#83D4F7",
+        "#FFE68C",
+        "#A8E6CF",
+        "#DCD0FF",
+        "#FFD3B6",
+        "#FFAAA5",
+        "#FFFFFF"
+      ],
+      "svg_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/color_the_cat/cat_2.svg",
+      "thumbnail_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/color_the_cat/thumb_2.png",
+      "thumbnail_asset": "img_puzzle_little_garden",
+      "regions": [
+        {
+          "id": "ear_left",
+          "name": "Left Ear",
+          "path_data": "M 80 100 L 55 45 Q 90 50 110 80 Z"
+        },
+        {
+          "id": "ear_right",
+          "name": "Right Ear",
+          "path_data": "M 190 80 Q 210 50 245 45 L 220 100 Z"
+        },
+        {
+          "id": "flower_petals",
+          "name": "Flower Petals",
+          "path_data": "M 90 60 C 80 40 100 30 110 45 C 120 30 140 40 130 60 C 145 70 135 90 115 85 C 95 90 85 70 90 60 Z"
+        },
+        {
+          "id": "flower_center",
+          "name": "Flower Center",
+          "path_data": "M 105 60 C 105 54 115 54 115 60 C 115 66 105 66 105 60 Z"
+        },
+        {
+          "id": "face",
+          "name": "Face",
+          "path_data": "M 90 100 C 55 125 55 175 95 190 C 130 200 170 200 205 190 C 245 175 245 125 210 100 C 190 85 110 85 90 100 Z"
+        },
+        {
+          "id": "collar",
+          "name": "Collar",
+          "path_data": "M 105 188 C 130 198 170 198 195 188 L 192 198 C 170 208 130 208 108 198 Z"
+        },
+        {
+          "id": "bell",
+          "name": "Bell",
+          "path_data": "M 143 205 C 143 198 157 198 157 205 C 157 215 143 215 143 205 Z"
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "path_data": "M 105 198 C 75 215 75 260 105 270 L 195 270 C 225 260 225 215 195 198 Z"
+        }
+      ],
+      "decorative_paths": [
+        {
+          "path_data": "M 70 145 L 30 140 M 70 155 L 25 158",
+          "stroke_color": "#30445C",
+          "stroke_width": 2.5
+        },
+        {
+          "path_data": "M 230 145 L 270 140 M 230 155 L 275 158",
+          "stroke_color": "#30445C",
+          "stroke_width": 2.5
+        },
+        {
+          "path_data": "M 105 135 Q 115 145 125 135 M 175 135 Q 185 145 195 135",
+          "stroke_color": "#30445C",
+          "stroke_width": 2.5
+        },
+        {
+          "path_data": "M 146 148 L 154 148 L 150 153 Z M 150 153 Q 145 160 140 158 M 150 153 Q 155 160 160 158",
+          "stroke_color": "#30445C",
+          "stroke_width": 2.5
+        }
+      ]
+    }
+  ]
+}

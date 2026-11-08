@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "game_mode": "find_the_pair",
+  "levels": [
+    {
+      "id": "pair_easy_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "EASY",
+      "grid_rows": 4,
+      "grid_columns": 3,
+      "time_limit_seconds": 120,
+      "three_star_max_flips": 16,
+      "two_star_max_flips": 24,
+      "images": [
+        "img_puzzle_cute_cat",
+        "img_puzzle_cozy_room",
+        "img_puzzle_little_garden",
+        "img_puzzle_animals",
+        "img_puzzle_picnic",
+        "img_puzzle_nature"
+      ],
+      "thumbnail_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/find_the_pair/thumb_1.png",
+      "thumbnail_asset": "img_puzzle_cute_cat"
+    },
+    {
+      "id": "pair_easy_2",
+      "number": 2,
+      "title": "Level 2",
+      "difficulty": "EASY",
+      "grid_rows": 4,
+      "grid_columns": 3,
+      "time_limit_seconds": 120,
+      "three_star_max_flips": 16,
+      "two_star_max_flips": 24,
+      "images": [
+        "img_puzzle_cozy_room",
+        "img_puzzle_little_garden",
+        "img_puzzle_animals",
+        "img_puzzle_picnic",
+        "img_puzzle_nature",
+        "img_puzzle_food"
+      ],
+      "thumbnail_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/find_the_pair/thumb_2.png",
+      "thumbnail_asset": "img_puzzle_cozy_room"
+    },
+    {
+      "id": "pair_med_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "MEDIUM",
+      "grid_rows": 4,
+      "grid_columns": 4,
+      "time_limit_seconds": 180,
+      "three_star_max_flips": 24,
+      "two_star_max_flips": 36,
+      "images": [
+        "img_puzzle_cute_cat",
+        "img_puzzle_cozy_room",
+        "img_puzzle_little_garden",
+        "img_puzzle_animals",
+        "img_puzzle_picnic",
+        "img_puzzle_nature",
+        "img_puzzle_food",
+        "img_puzzle_frog_pond"
+      ],
+      "thumbnail_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/find_the_pair/thumb_med_1.png",
+      "thumbnail_asset": "img_puzzle_cute_cat"
+    },
+    {
+      "id": "pair_hard_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "HARD",
+      "grid_rows": 5,
+      "grid_columns": 4,
+      "time_limit_seconds": 240,
+      "three_star_max_flips": 32,
+      "two_star_max_flips": 48,
+      "images": [
+        "img_puzzle_cute_cat",
+        "img_puzzle_cozy_room",
+        "img_puzzle_little_garden",
+        "img_puzzle_animals",
+        "img_puzzle_picnic",
+        "img_puzzle_nature",
+        "img_puzzle_food",
+        "img_puzzle_frog_pond",
+        "img_puzzle_space",
+        "img_puzzle_cat_artist"
+      ],
+      "thumbnail_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/find_the_pair/thumb_hard_1.png",
+      "thumbnail_asset": "img_puzzle_cute_cat"
+    }
+  ]
+}

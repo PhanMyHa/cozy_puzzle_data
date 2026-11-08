@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "game_mode": "slide_the_cat",
+  "levels": [
+    {
+      "id": "slide_easy_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "EASY",
+      "grid_size": 3,
+      "image_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/slide_the_cat/slide_1.png",
+      "image_asset": "img_puzzle_cute_cat",
+      "shuffle_moves": 15,
+      "three_star_moves": 22,
+      "two_star_moves": 38
+    },
+    {
+      "id": "slide_easy_2",
+      "number": 2,
+      "title": "Level 2",
+      "difficulty": "EASY",
+      "grid_size": 3,
+      "image_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/slide_the_cat/slide_2.png",
+      "image_asset": "img_puzzle_cozy_room",
+      "shuffle_moves": 15,
+      "three_star_moves": 22,
+      "two_star_moves": 38
+    },
+    {
+      "id": "slide_easy_3",
+      "number": 3,
+      "title": "Level 3",
+      "difficulty": "EASY",
+      "grid_size": 3,
+      "image_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/slide_the_cat/slide_3.png",
+      "image_asset": "img_puzzle_little_garden",
+      "shuffle_moves": 15,
+      "three_star_moves": 22,
+      "two_star_moves": 38
+    },
+    {
+      "id": "slide_med_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "MEDIUM",
+      "grid_size": 4,
+      "image_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/slide_the_cat/slide_med_1.png",
+      "image_asset": "img_puzzle_nature",
+      "shuffle_moves": 30,
+      "three_star_moves": 48,
+      "two_star_moves": 80
+    },
+    {
+      "id": "slide_hard_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "HARD",
+      "grid_size": 4,
+      "image_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/slide_the_cat/slide_hard_1.png",
+      "image_asset": "img_puzzle_food",
+      "shuffle_moves": 55,
+      "three_star_moves": 70,
+      "two_star_moves": 110
+    }
+  ]
+}

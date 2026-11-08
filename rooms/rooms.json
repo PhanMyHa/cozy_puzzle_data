@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "collection": "rooms",
+  "rooms": [
+    {
+      "id": "default_room",
+      "name": "Default Room",
+      "description": "Cozy default room with warm wooden floor and sunny window",
+      "background_asset": "bg_room_default",
+      "background_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/rooms/bg_room_default.png",
+      "price_stars": 0,
+      "default_unlocked": true
+    },
+    {
+      "id": "beach_room",
+      "name": "Beach Room",
+      "description": "Bright breezy room overlooking sandy beaches and blue ocean",
+      "background_asset": "bg_room_beach",
+      "background_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/rooms/bg_room_beach.png",
+      "price_stars": 200,
+      "default_unlocked": false
+    },
+    {
+      "id": "bakery_room",
+      "name": "Bakery Room",
+      "description": "Sweet warm cafe room smelling of fresh bread and pastries",
+      "background_asset": "bg_room_bakery",
+      "background_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/rooms/bg_room_bakery.png",
+      "price_stars": 300,
+      "default_unlocked": false
+    }
+  ]
+}
