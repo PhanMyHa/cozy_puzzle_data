@@ -6,7 +6,8 @@
   "files": {
     "game_config": "config/game_config.json",
     "cat_puzzle": "cat_puzzle/cat_puzzle.json",
-    "color_the_cat": "levels/color_the_cat.json",
+    "color_the_cat": "cat_coloring/cat_coloring.json",
+    "cat_coloring": "cat_coloring/cat_coloring.json",
     "slide_the_cat": "cat_slide/cat_slide.json",
     "find_the_pair": "levels/find_the_pair.json",
     "cat_connect": "levels/cat_connect.json",
