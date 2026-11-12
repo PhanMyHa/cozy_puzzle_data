@@ -95,7 +95,8 @@ def to_path(m, eps, ox, oy):
 
 
 def convert(inp, out, colors, min_area, epsilon, max_size, numbers,
-            stroke_width=1.0, stroke_color="#222222", alpha_thresh=10):
+            stroke_width=1.0, stroke_color="#222222", alpha_thresh=10,
+            save_json=False):
     rgb, mask = load(inp, max_size, alpha_thresh)
     h, w = mask.shape
 
@@ -150,7 +151,7 @@ def convert(inp, out, colors, min_area, epsilon, max_size, numbers,
             if dist[yy, xx] >= 4:
                 fs = int(min(max(dist[yy, xx] * 1.1, 6), 30))
                 texts.append(
-                    f'<text class="num" x="{xx + x0}" y="{yy + y0}" font-size="{fs}" '
+                    f'<text id="n{rid}" class="num" x="{xx + x0}" y="{yy + y0}" font-size="{fs}" '
                     f'text-anchor="middle" dominant-baseline="central" '
                     f'fill="#555" pointer-events="none">{index}</text>'
                 )
@@ -167,22 +168,26 @@ def convert(inp, out, colors, min_area, epsilon, max_size, numbers,
     with open(out, "w", encoding="utf-8") as f:
         f.write("\n".join(svg))
 
-    pal_path = os.path.splitext(out)[0] + "_palette.json"
-    with open(pal_path, "w", encoding="utf-8") as f:
-        json.dump(
-            [{"index": i + 1, "color": c, "regions": counts.get(i + 1, 0)}
-             for i, c in enumerate(palette)],
-            f, indent=2,
-        )
-
     print(f"Đã lưu {out}: {len(paths)} vùng, {k} màu")
-    print(f"Bảng màu: {pal_path}")
+
+    if save_json:
+        pal_path = os.path.splitext(out)[0] + "_palette.json"
+        with open(pal_path, "w", encoding="utf-8") as f:
+            json.dump(
+                [{"index": i + 1, "color": c, "regions": counts.get(i + 1, 0)}
+                 for i, c in enumerate(palette)],
+                f, indent=2,
+            )
+        print(f"Bảng màu: {pal_path}")
 
 
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
-    p.add_argument("input")
-    p.add_argument("-o", "--output", default="output.svg")
+    p.add_argument("input", nargs="?", default="cat_coloring",
+                   help="file PNG hoặc folder chứa PNG (mặc định: cat_coloring)")
+    p.add_argument("-o", "--output", default=None,
+                   help="chỉ dùng khi input là 1 file; mặc định lưu cạnh file PNG")
+    p.add_argument("--json", action="store_true", help="xuất thêm file bảng màu JSON")
     p.add_argument("--colors", type=int, default=8)
     p.add_argument("--min-area", type=int, default=60)
     p.add_argument("--epsilon", type=float, default=1.0)
@@ -192,5 +197,27 @@ if __name__ == "__main__":
                    help="độ dày viền (0 = không viền)")
     p.add_argument("--stroke-color", default="#222222")
     a = p.parse_args()
-    convert(a.input, a.output, a.colors, a.min_area, a.epsilon, a.max_size,
-            a.numbers, a.stroke_width, a.stroke_color)
+    if os.path.isdir(a.input):
+        files = sorted(
+            os.path.join(a.input, f) for f in os.listdir(a.input)
+            if f.lower().endswith((".png", ".webp"))
+        )
+    else:
+        files = [a.input]
+
+    if not files:
+        raise SystemExit(f"Không tìm thấy file PNG nào trong '{a.input}'")
+
+    for f in files:
+        if a.output and len(files) == 1:
+            out = a.output
+        else:
+            svg_dir = os.path.join(os.path.dirname(f), "svg")
+            os.makedirs(svg_dir, exist_ok=True)
+            out = os.path.join(
+                svg_dir, os.path.splitext(os.path.basename(f))[0] + ".svg")
+        try:
+            convert(f, out, a.colors, a.min_area, a.epsilon, a.max_size,
+                    a.numbers, a.stroke_width, a.stroke_color, save_json=a.json)
+        except Exception as e:
+            print(f"Lỗi với {f}: {e}")
