@@ -1,0 +1,42 @@
+[
+  {
+    "index": 1,
+    "color": "#fafaf6",
+    "regions": 16
+  },
+  {
+    "index": 2,
+    "color": "#c8dc8b",
+    "regions": 21
+  },
+  {
+    "index": 3,
+    "color": "#c4ad9b",
+    "regions": 6
+  },
+  {
+    "index": 4,
+    "color": "#e7d3c9",
+    "regions": 2
+  },
+  {
+    "index": 5,
+    "color": "#e6ee84",
+    "regions": 26
+  },
+  {
+    "index": 6,
+    "color": "#f7f8bc",
+    "regions": 9
+  },
+  {
+    "index": 7,
+    "color": "#b88a54",
+    "regions": 3
+  },
+  {
+    "index": 8,
+    "color": "#aec88d",
+    "regions": 5
+  }
+]
