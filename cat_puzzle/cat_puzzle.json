@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "game_mode": "cat_puzzle",
+  "levels": [
+    {
+      "id": "cat_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/001.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "id": "cat_2",
+      "number": 2,
+      "title": "Level 2",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/002.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "id": "cat_3",
+      "number": 3,
+      "title": "Level 3",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/003.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "id": "cat_4",
+      "number": 4,
+      "title": "Level 4",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/004.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "id": "cat_5",
+      "number": 5,
+      "title": "Level 5",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/005.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "id": "cat_6",
+      "number": 6,
+      "title": "Level 6",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/006.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "id": "cat_7",
+      "number": 7,
+      "title": "Level 7",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/007.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "id": "cat_8",
+      "number": 8,
+      "title": "Level 8",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/008.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "id": "cat_9",
+      "number": 9,
+      "title": "Level 9",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/009.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "id": "cat_10",
+      "number": 10,
+      "title": "Level 10",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/010.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    },
+    {
+      "id": "cat_11",
+      "number": 11,
+      "title": "Level 11",
+      "difficulty": "BASIC",
+      "image_url": "cat_puzzle/011.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "rows": 3,
+      "columns": 3
+    }
+  ]
+}

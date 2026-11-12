@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "game_mode": "slide_the_cat",
+  "levels": [
+    {
+      "id": "slide_easy_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "EASY",
+      "grid_size": 3,
+      "image_url": "cat_slide/001.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "shuffle_moves": 15,
+      "three_star_moves": 22,
+      "two_star_moves": 38
+    },
+    {
+      "id": "slide_easy_2",
+      "number": 2,
+      "title": "Level 2",
+      "difficulty": "EASY",
+      "grid_size": 3,
+      "image_url": "cat_slide/002.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "shuffle_moves": 15,
+      "three_star_moves": 22,
+      "two_star_moves": 38
+    },
+    {
+      "id": "slide_med_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "MEDIUM",
+      "grid_size": 4,
+      "image_url": "cat_slide/003.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "shuffle_moves": 30,
+      "three_star_moves": 48,
+      "two_star_moves": 80
+    },
+    {
+      "id": "slide_med_2",
+      "number": 2,
+      "title": "Level 2",
+      "difficulty": "MEDIUM",
+      "grid_size": 4,
+      "image_url": "cat_slide/004.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "shuffle_moves": 30,
+      "three_star_moves": 48,
+      "two_star_moves": 80
+    },
+    {
+      "id": "slide_hard_1",
+      "number": 1,
+      "title": "Level 1",
+      "difficulty": "HARD",
+      "grid_size": 4,
+      "image_url": "cat_slide/005.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "shuffle_moves": 55,
+      "three_star_moves": 70,
+      "two_star_moves": 110
+    },
+    {
+      "id": "slide_hard_2",
+      "number": 2,
+      "title": "Level 2",
+      "difficulty": "HARD",
+      "grid_size": 4,
+      "image_url": "cat_slide/006.webp",
+      "image_asset": "img_puzzle_cute_cat",
+      "shuffle_moves": 55,
+      "three_star_moves": 70,
+      "two_star_moves": 110
+    }
+  ]
+}
