@@ -12,16 +12,19 @@
       "time_limit_seconds": 120,
       "three_star_max_flips": 16,
       "two_star_max_flips": 24,
+      "thumbnail_url": "cat_pair/001.webp",
       "images": [
-        "img_puzzle_cute_cat",
-        "img_puzzle_cozy_room",
-        "img_puzzle_little_garden",
-        "img_puzzle_animals",
-        "img_puzzle_picnic",
-        "img_puzzle_nature"
-      ],
-      "thumbnail_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/find_the_pair/thumb_1.png",
-      "thumbnail_asset": "img_puzzle_cute_cat"
+        "cat_pair/001.webp",
+        "cat_pair/002.webp",
+        "cat_pair/003.webp",
+        "cat_pair/004.webp",
+        "cat_pair/005.webp",
+        "cat_pair/006.webp",
+        "cat_pair/007.webp",
+        "cat_pair/008.webp",
+        "cat_pair/009.webp",
+        "cat_pair/010.webp"
+      ]
     },
     {
       "id": "pair_easy_2",
@@ -33,64 +36,67 @@
       "time_limit_seconds": 120,
       "three_star_max_flips": 16,
       "two_star_max_flips": 24,
+      "thumbnail_url": "cat_pair/002.webp",
       "images": [
-        "img_puzzle_cozy_room",
-        "img_puzzle_little_garden",
-        "img_puzzle_animals",
-        "img_puzzle_picnic",
-        "img_puzzle_nature",
-        "img_puzzle_food"
-      ],
-      "thumbnail_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/find_the_pair/thumb_2.png",
-      "thumbnail_asset": "img_puzzle_cozy_room"
+        "cat_pair/002.webp",
+        "cat_pair/003.webp",
+        "cat_pair/004.webp",
+        "cat_pair/005.webp",
+        "cat_pair/006.webp",
+        "cat_pair/007.webp",
+        "cat_pair/008.webp",
+        "cat_pair/009.webp",
+        "cat_pair/010.webp",
+        "cat_pair/001.webp"
+      ]
     },
     {
       "id": "pair_med_1",
-      "number": 1,
-      "title": "Level 1",
+      "number": 3,
+      "title": "Level 3",
       "difficulty": "MEDIUM",
       "grid_rows": 4,
       "grid_columns": 4,
       "time_limit_seconds": 180,
       "three_star_max_flips": 24,
       "two_star_max_flips": 36,
+      "thumbnail_url": "cat_pair/003.webp",
       "images": [
-        "img_puzzle_cute_cat",
-        "img_puzzle_cozy_room",
-        "img_puzzle_little_garden",
-        "img_puzzle_animals",
-        "img_puzzle_picnic",
-        "img_puzzle_nature",
-        "img_puzzle_food",
-        "img_puzzle_frog_pond"
-      ],
-      "thumbnail_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/find_the_pair/thumb_med_1.png",
-      "thumbnail_asset": "img_puzzle_cute_cat"
+        "cat_pair/003.webp",
+        "cat_pair/004.webp",
+        "cat_pair/005.webp",
+        "cat_pair/006.webp",
+        "cat_pair/007.webp",
+        "cat_pair/008.webp",
+        "cat_pair/009.webp",
+        "cat_pair/010.webp",
+        "cat_pair/001.webp",
+        "cat_pair/002.webp"
+      ]
     },
     {
       "id": "pair_hard_1",
-      "number": 1,
-      "title": "Level 1",
+      "number": 4,
+      "title": "Level 4",
       "difficulty": "HARD",
       "grid_rows": 5,
       "grid_columns": 4,
       "time_limit_seconds": 240,
       "three_star_max_flips": 32,
       "two_star_max_flips": 48,
+      "thumbnail_url": "cat_pair/004.webp",
       "images": [
-        "img_puzzle_cute_cat",
-        "img_puzzle_cozy_room",
-        "img_puzzle_little_garden",
-        "img_puzzle_animals",
-        "img_puzzle_picnic",
-        "img_puzzle_nature",
-        "img_puzzle_food",
-        "img_puzzle_frog_pond",
-        "img_puzzle_space",
-        "img_puzzle_cat_artist"
-      ],
-      "thumbnail_url": "https://raw.githubusercontent.com/PLACEHOLDER_USER/cozy-puzzle-data/main/assets/find_the_pair/thumb_hard_1.png",
-      "thumbnail_asset": "img_puzzle_cute_cat"
+        "cat_pair/001.webp",
+        "cat_pair/002.webp",
+        "cat_pair/003.webp",
+        "cat_pair/004.webp",
+        "cat_pair/005.webp",
+        "cat_pair/006.webp",
+        "cat_pair/007.webp",
+        "cat_pair/008.webp",
+        "cat_pair/009.webp",
+        "cat_pair/010.webp"
+      ]
     }
   ]
 }

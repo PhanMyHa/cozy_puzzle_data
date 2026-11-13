@@ -94,6 +94,22 @@ def to_path(m, eps, ox, oy):
     return " ".join(parts)
 
 
+def to_outline(m, eps, ox, oy):
+    """Đường bao chưa nở, dò trên ảnh phóng 2x để các vùng kề nhau trùng nét viền."""
+    big = cv2.resize(m, None, fx=2, fy=2, interpolation=cv2.INTER_NEAREST)
+    contours, _ = cv2.findContours(big, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
+    parts = []
+    for c in contours:
+        if len(c) < 3:
+            continue
+        c = cv2.approxPolyDP(c, eps * 2, True)
+        if len(c) < 3:
+            continue
+        pts = (c.reshape(-1, 2) + 0.5) / 2.0
+        parts.append("M" + " L".join(f"{x + ox:.2f} {y + oy:.2f}" for x, y in pts) + "Z")
+    return " ".join(parts)
+
+
 def convert(inp, out, colors, min_area, epsilon, max_size, numbers,
             stroke_width=1.0, stroke_color="#222222", alpha_thresh=10,
             save_json=False):
@@ -119,7 +135,7 @@ def convert(inp, out, colors, min_area, epsilon, max_size, numbers,
     order = sorted(range(1, n + 1), key=lambda i: -areas[i])  # to vẽ trước, nhỏ đè lên
 
     kernel = np.ones((3, 3), np.uint8)
-    paths, texts, counts = [], [], {}
+    paths, texts, counts, outlines = [], [], {}, []
     for rid in order:
         sl = slices[rid - 1]
         if sl is None or areas[rid] == 0:
@@ -134,15 +150,16 @@ def convert(inp, out, colors, min_area, epsilon, max_size, numbers,
         d = to_path(mg, epsilon, x0, y0)
         if not d:
             continue
+        if stroke_width > 0:
+            od = to_outline(m, epsilon, x0, y0)
+            if od:
+                outlines.append(od)
 
         index = cidx + 1
         counts[index] = counts.get(index, 0) + 1
         paths.append(
             f'<path id="r{rid}" class="region" d="{d}" fill="#d9d9d9" '
-            f'fill-rule="evenodd" data-index="{index}" data-color="{palette[cidx]}"'
-            + (f' stroke="{stroke_color}" stroke-width="{stroke_width}" '
-               f'stroke-linejoin="round"' if stroke_width > 0 else "")
-            + "/>"
+            f'fill-rule="evenodd" data-index="{index}" data-color="{palette[cidx]}"/>'
         )
 
         if numbers:
@@ -161,6 +178,12 @@ def convert(inp, out, colors, min_area, epsilon, max_size, numbers,
         f'width="{w}" height="{h}">',
         '<g id="regions">', *paths, "</g>",
     ]
+    if outlines:
+        svg.append(
+            f'<path id="outline" d="{" ".join(outlines)}" fill="none" '
+            f'stroke="{stroke_color}" stroke-width="{stroke_width}" '
+            f'stroke-linejoin="round" stroke-linecap="round" pointer-events="none"/>'
+        )
     if texts:
         svg += ['<g id="numbers">', *texts, "</g>"]
     svg.append("</svg>")
@@ -193,7 +216,7 @@ if __name__ == "__main__":
     p.add_argument("--epsilon", type=float, default=1.0)
     p.add_argument("--max-size", type=int, default=1024)
     p.add_argument("--numbers", action="store_true")
-    p.add_argument("--stroke-width", type=float, default=1.0,
+    p.add_argument("--stroke-width", type=float, default=0.7,
                    help="độ dày viền (0 = không viền)")
     p.add_argument("--stroke-color", default="#222222")
     a = p.parse_args()
